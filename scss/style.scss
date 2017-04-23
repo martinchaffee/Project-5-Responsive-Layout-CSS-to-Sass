@@ -1,0 +1,174 @@
+
+/*--------------Style for medium (tablet) screens - 768px---------------------*/
+@media(min-width: 768px) {
+
+
+	h2 {
+		padding: 1em 0;
+	}
+
+
+/*--------Main-Header-----------*/
+	.main-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+	}
+
+	header h1 {
+		padding-top: 1em;
+	}
+
+	.main-nav a {
+		background-color: inherit;
+		border-radius: 1em;
+		font-size: 110%;
+		margin: 1em;
+		padding: .25em;
+		width: auto;
+
+	}
+
+	.main-nav a:hover {
+		background-color: #ffd7ae;
+		transition: .5s;
+}
+
+/*--------Banner----------------*/
+
+
+	.banner {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		width: 95%;
+	}
+
+	.banner img {
+		width: 40%;
+	}
+
+	.banner p {
+		font-size: 130%;
+		margin: 0;
+		padding-bottom: 11em;
+		text-align: left;
+		width: 55%;
+	}
+
+
+/*--------Portfolio-------------*/
+
+	.portfolio {
+		width: 100%;
+	}
+	.portfolio-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: auto;
+		width: 95%;
+	}
+
+	.item {
+		width:49%;
+
+	}
+
+	.portfolio p {
+		font-size: 115%;
+		width: 75%;
+	}
+
+/*--------Skills & Contact------*/
+
+	.contact p {
+		font-size: 140%;
+		width: 70%;
+	}
+
+	.skills li {
+		font-size: 120%;
+	}
+/*--------Footer----------------*/
+
+	.hide-mobile {
+		display: inline-block;
+		margin-left: 2em;
+	}
+
+	#back-to-top {
+		display: none;
+	}
+
+	footer {
+		margin-bottom: 5em;
+		padding-top: 1em;
+		width: 90%;
+	}
+
+}
+
+
+/*--------------Style for large (computer) screens - 1024px-------------------*/
+@media(min-width: 1024px){
+
+/*--------Main-Header-----------*/
+	.header {
+		align-items: flex-end;
+		display: flex;
+		justify-content: space-between;
+		height: 6em;
+		margin: auto;
+		width: 90%;
+	}
+	h1 {
+		margin-bottom: 0;
+	}
+	.main-nav {
+		display: flex;
+		flex-direction: row;
+		align-content: flex-end;
+		justify-content: flex-end;
+		margin: 0;
+	}
+
+	.main-nav a {
+		margin: auto 0 auto 4em;
+		width: auto;
+	}
+
+/*--------Banner----------------*/
+	.banner {
+		justify-content: space-between;
+		width: 90%
+	}
+
+
+
+/*--------Portfolio-------------*/
+
+	.portfolio {
+		width: 97%;
+	}
+
+	.item {
+		width: 32%;
+	}
+
+	.portfolio-items {
+		width: 94%;
+	}
+
+/*--------Skills & Contact------*/
+	.contact p {
+		width: 60%;
+	}
+
+/*--------Footer----------------*/
+
+	footer {
+		margin-bottom: 1em;
+	}
+}

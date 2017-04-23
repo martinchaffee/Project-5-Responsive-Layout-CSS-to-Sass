@@ -1,0 +1,36 @@
+
+/*--------Footer-----------*/
+footer {
+	border-top: 1px solid #4daedc;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 95%;
+}
+
+.footer-nav {
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	text-transform: uppercase;
+}
+
+.footer-nav li {
+	font-weight: bold;
+}
+
+.footer-nav a {
+	border-radius: 1em;
+	display: inline-block;
+	padding: .25em;
+}
+
+.footer-nav a:hover {
+	background-color: #ffd7ae;
+	transition: .5s;
+}
+
+.hide-mobile {
+	display: none;
+}

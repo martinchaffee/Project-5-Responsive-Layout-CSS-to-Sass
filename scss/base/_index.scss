@@ -1,9 +1,7 @@
 // =======================================================================
-// Layout Imports
+// Base Imports
 // =======================================================================
 
-@import 'base/variables';
-@import 'containers';
-@import 'footer';
-@import 'header';
-@import 'extends';
+@import 'variables';
+@import 'mixins';
+@import 'base';

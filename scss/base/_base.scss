@@ -1,0 +1,49 @@
+/* Base Styles------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+/* Link Styles Styles*/
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	padding: 0;
+}
+/*Section Styles------------------------------*/
+
+body {
+	background-color: #82c6e6;
+	color: #03547b;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+h1, h2, h3, a {
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+p {
+	color: #666666;
+	font-size: 110%;
+	margin: auto;
+}

@@ -1,0 +1,80 @@
+/*---------Banner-----------*/
+.banner {
+	display: block;
+	margin: 2em auto;
+	padding: 1em 0;
+	width: 95%;
+}
+
+.banner img {
+	margin: 0;
+	width: 80%;
+}
+
+.banner p {
+  color: #ffffff;
+	margin: 1em auto;
+}
+
+/*--------Portfolio-----------*/
+
+.portfolio {
+	background-color: #ffffff;
+	display: block;
+	margin: auto;
+	padding: 2em 0;
+	width: 100%;
+
+}
+.portfolio-items {
+	padding: 0;
+	margin: auto;
+	width: 95%;
+
+}
+
+.portfolio-items li {
+	display: block;
+	flex-direction: column;
+	margin-top: 2em;
+}
+.portfolio-items img{
+	margin: auto;
+	width: 100%;
+}
+
+.portfolio p {
+	padding: 1em 0;
+	width: 95%;
+}
+
+/*--------Skills & Contact-----------*/
+
+.skills,
+.contact {
+	margin: auto;
+	padding: 2em 0;
+	width: 95%;
+}
+
+.skills ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+.skills li {
+	background-color: #0795D9;
+	border-radius: 1em;
+	color: #ffffff;
+	font-family: 'Loto', sans-serif;
+	margin: .25em;
+	padding: .5em .75em;
+}
+
+.contact p {
+  color: #ffffff;
+  margin: auto;
+	padding: .75em 0;
+}
