@@ -1,0 +1,21 @@
+// Descriptive color variables
+
+$white            : #fff;
+$black            : #000;
+$dove-gray        : #666;
+$orient           : #03547b;
+$seagull          : #82c6e6;
+$caramel          : #ffd7ae;
+$shakespeare      : #4daedc;
+
+// Functional color variables
+
+$color-prim         : $seagull;
+$color-sec          : $white;
+
+$color-text-light   : $white ;
+$color-text-base    : $dove-gray;
+$color-text-dark    : $orient;
+
+$color-button-hvr   : $caramel;
+$color-border       : $shakespeare;

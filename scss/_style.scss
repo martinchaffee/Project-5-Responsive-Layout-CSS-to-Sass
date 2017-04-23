@@ -1,12 +1,11 @@
 
+
 /*--------------Style for medium (tablet) screens - 768px---------------------*/
 @media(min-width: 768px) {
-
 
 	h2 {
 		padding: 1em 0;
 	}
-
 
 /*--------Main-Header-----------*/
 	.main-nav {
@@ -30,7 +29,7 @@
 	}
 
 	.main-nav a:hover {
-		background-color: #ffd7ae;
+		background-color: $color-button-hvr;
 		transition: .5s;
 }
 

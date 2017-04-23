@@ -1,4 +1,4 @@
-/* Base Styles------------------------------*/
+/* Global Layout Styles*/
 * {
 	box-sizing: border-box;
 }
@@ -7,11 +7,12 @@
 a {
 	text-decoration: none;
 	color: inherit;
+	font-family: 'Lato', sans-serif;
+	&:visited {
+		color: inherit;
+	}
 }
 
-a:visited {
-	color: inherit;
-}
 
 li {
 	list-style-type: none;
@@ -20,11 +21,10 @@ li {
 ul {
 	padding: 0;
 }
-/*Section Styles------------------------------*/
 
 body {
-	background-color: #82c6e6;
-	color: #03547b;
+	background-color: $color-prim;
+	color: $color-text-base;
 	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
@@ -33,17 +33,24 @@ body {
 	width: 100%;
 }
 
-h1, h2, h3, a {
+h1, h3{
 	font-family: 'Lato', sans-serif;
 }
 
 h2 {
 	font-size: 100%;
 	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+
 }
 
 p {
-	color: #666666;
+	color: $color-text-base;
 	font-size: 110%;
-	margin: auto;
+	@extend %margin-auto;
+}
+
+.contact p,
+.banner p {
+	color: $color-text-light;
 }

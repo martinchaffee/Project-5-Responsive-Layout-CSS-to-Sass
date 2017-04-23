@@ -1,20 +1,19 @@
 /*--------Main-Header-----------*/
 .main-nav {
 	display: block;
-	margin: auto;
+	@extend %margin-auto;
 }
 
 .main-nav a {
-	background-color: #ffffff;
+	background-color: $color-sec;
 	display: inline-block;
 	font-weight: bold;
 	margin: .33em auto;
 	padding: .5em 0em;
 	text-transform: uppercase;
 	width: 95%;
-}
-
-.main-nav a:hover {
-	background-color: #ffd7ae;
-	transition: .5s;
+	&:hover {
+		background-color: $color-button-hvr;
+		transition: .5s;
+	}
 }

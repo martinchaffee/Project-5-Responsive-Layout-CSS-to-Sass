@@ -1,0 +1,12 @@
+
+//Margin Auto
+
+%margin-auto {
+  margin: auto;
+}
+
+%content {
+  	@extend %margin-auto;
+  	padding: 2em 0;
+  	width: 95%;
+  }

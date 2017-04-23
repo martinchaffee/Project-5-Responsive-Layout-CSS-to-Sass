@@ -12,23 +12,21 @@
 }
 
 .banner p {
-  color: #ffffff;
 	margin: 1em auto;
 }
-
 /*--------Portfolio-----------*/
 
 .portfolio {
-	background-color: #ffffff;
+	@extend %margin-auto;
+	background-color: $color-sec;
 	display: block;
-	margin: auto;
 	padding: 2em 0;
 	width: 100%;
 
 }
 .portfolio-items {
+	@extend %margin-auto;
 	padding: 0;
-	margin: auto;
 	width: 95%;
 
 }
@@ -39,7 +37,7 @@
 	margin-top: 2em;
 }
 .portfolio-items img{
-	margin: auto;
+	@extend %margin-auto;
 	width: 100%;
 }
 
@@ -52,9 +50,7 @@
 
 .skills,
 .contact {
-	margin: auto;
-	padding: 2em 0;
-	width: 95%;
+	@extend %content;
 }
 
 .skills ul{
@@ -65,16 +61,15 @@
 }
 
 .skills li {
-	background-color: #0795D9;
+	background-color: $color-prim;
 	border-radius: 1em;
-	color: #ffffff;
+	color: $color-text-light;
 	font-family: 'Loto', sans-serif;
 	margin: .25em;
 	padding: .5em .75em;
 }
 
 .contact p {
-  color: #ffffff;
-  margin: auto;
+	@extend %margin-auto;
 	padding: .75em 0;
 }
