@@ -6,8 +6,8 @@
 /* Link Styles Styles*/
 a {
 	text-decoration: none;
-	color: inherit;
-	font-family: 'Lato', sans-serif;
+	color: $color-text-dark;
+	font-family: $stack-lato;
 	&:visited {
 		color: inherit;
 	}
@@ -24,9 +24,8 @@ ul {
 
 body {
 	background-color: $color-prim;
-	color: $color-text-base;
-	font-family: 'Roboto', sans-serif;
-	font-size: 100%;
+	@include text($color-text-dark, 100%, 400);
+	font-family: $stack-roboto;
 	line-height: 1.5;
 	margin: 0 auto;
 	text-align: center;
@@ -34,23 +33,21 @@ body {
 }
 
 h1, h3{
-	font-family: 'Lato', sans-serif;
+	font-family: $stack-lato;
 }
 
 h2 {
 	font-size: 100%;
 	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
+	font-family: $stack-lato;
 
+	@media #{$brk-narrow} {
+		padding: 1em 0;
+	}
 }
 
 p {
 	color: $color-text-base;
 	font-size: 110%;
 	@extend %margin-auto;
-}
-
-.contact p,
-.banner p {
-	color: $color-text-light;
 }

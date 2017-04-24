@@ -7,6 +7,7 @@ $orient           : #03547b;
 $seagull          : #82c6e6;
 $caramel          : #ffd7ae;
 $shakespeare      : #4daedc;
+$cerulean         : #0795D9;
 
 // Functional color variables
 
@@ -19,3 +20,13 @@ $color-text-dark    : $orient;
 
 $color-button-hvr   : $caramel;
 $color-border       : $shakespeare;
+$color-skills       : $cerulean;
+
+// Font stacks
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-lato   : 'Lato', $stack-sans-serif;
+$stack-roboto :'Roboto', $stack-sans-serif;
+
+// Media query breakpoints
+$brk-narrow   :'(min-width: 768px)';
+$brk-wide     :'(min-width: 1024px)';

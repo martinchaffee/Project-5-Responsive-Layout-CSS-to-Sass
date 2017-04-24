@@ -5,6 +5,15 @@ footer {
 	justify-content: space-between;
 	@extend %margin-auto;
 	width: 95%;
+
+	@media #{$brk-narrow} {
+		margin-bottom: 5em;
+		padding-top: 1em;
+		width: 90%;
+	}
+	@media #{$brk-wide} {
+		margin-bottom: 1em;
+	}
 }
 
 .footer-nav {
@@ -12,17 +21,14 @@ footer {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
-	text-transform: uppercase;
-}
-
-.footer-nav li {
-	font-weight: bold;
 }
 
 .footer-nav a {
+	@include text($color-text-dark, 90%, 600);
 	border-radius: 1em;
 	display: inline-block;
 	padding: .25em;
+	text-transform: uppercase;
 	&:hover {
 		background-color: $color-button-hvr;
 		transition: .5s;
@@ -31,4 +37,15 @@ footer {
 
 .hide-mobile {
 	display: none;
+
+	@media #{$brk-narrow} {
+			display: inline-block;
+			margin-left: 2em;
+	}
+}
+
+#back-to-top {
+	@media #{$brk-narrow} {
+		display: none;
+	}
 }

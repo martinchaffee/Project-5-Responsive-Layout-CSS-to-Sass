@@ -1,19 +1,75 @@
 /*--------Main-Header-----------*/
+.header {
+	@media #{$brk-wide} {
+		align-items: flex-end;
+		display: flex;
+		justify-content: space-between;
+		height: 6em;
+		margin: auto;
+		width: 90%;
+	}
+}
+
 .main-nav {
 	display: block;
 	@extend %margin-auto;
+
+	@media #{$brk-narrow} {
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+	}
+	@media #{$brk-wide} {
+		display: flex;
+		flex-direction: row;
+		align-content: flex-end;
+		justify-content: flex-end;
+		margin: 0 !important;
+	}
+}
+
+header h1 {
+	@media #{$brk-narrow} {
+		padding-top: 1em;
+	}
+
+	@media #{$brk-wide} {
+		margin-bottom: 0;
+	}
+
 }
 
 .main-nav a {
+	@include text($color-text-dark, 100%, 600);
 	background-color: $color-sec;
 	display: inline-block;
-	font-weight: bold;
 	margin: .33em auto;
 	padding: .5em 0em;
 	text-transform: uppercase;
 	width: 95%;
+
+	@media #{$brk-narrow} {
+		background-color: inherit;
+		border-radius: 1em;
+		font-size: 110%;
+		margin: 1em;
+		padding: .25em;
+		width: auto;
+	}
+
+	@media #{$brk-wide} {
+			margin: auto 0 auto 4em;
+			width: auto;
+	}
+
 	&:hover {
 		background-color: $color-button-hvr;
 		transition: .5s;
+
+		@media #{$brk-narrow} {
+			background-color: $color-button-hvr;
+			transition: .5s;
+		}
 	}
+
 }

@@ -4,15 +4,41 @@
 	margin: 2em auto;
 	padding: 1em 0;
 	width: 95%;
+
+	@media #{$brk-narrow} {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		width: 95%;
+	}
+
+	@media#{$brk-wide} {
+		justify-content: space-between;
+		width: 90%;
+	}
 }
 
 .banner img {
 	margin: 0;
 	width: 80%;
+
+	@media #{$brk-narrow} {
+		width: 40%;
+	}
 }
 
 .banner p {
 	margin: 1em auto;
+	color: $color-text-light;
+
+	@media #{$brk-narrow} {
+		font-size: 130%;
+		margin: 0;
+		padding-bottom: 11em;
+		text-align: left;
+		width: 55%;
+	}
 }
 /*--------Portfolio-----------*/
 
@@ -23,12 +49,40 @@
 	padding: 2em 0;
 	width: 100%;
 
+	@media #{$brk-narrow} {
+		width: 100%;
+	}
+
+	@media #{$brk-wide} {
+		width: 97%;
+	}
 }
 .portfolio-items {
 	@extend %margin-auto;
 	padding: 0;
 	width: 95%;
 
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: auto;
+		width: 95%;
+	}
+}
+.item {
+	@media #{$brk-narrow} {
+		width:49%;
+	}
+	@media #{$brk-wide} {
+		width:32%;
+	}
+}
+
+.portfolio-items {
+	@media #{$brk-wide} {
+		width: 94%;
+	}
 }
 
 .portfolio-items li {
@@ -44,6 +98,11 @@
 .portfolio p {
 	padding: 1em 0;
 	width: 95%;
+
+	@media #{$brk-narrow} {
+		font-size: 115%;
+		width: 75%;
+	}
 }
 
 /*--------Skills & Contact-----------*/
@@ -61,15 +120,29 @@
 }
 
 .skills li {
-	background-color: $color-prim;
+	background-color: $color-skills;
 	border-radius: 1em;
 	color: $color-text-light;
-	font-family: 'Loto', sans-serif;
+	font-family: $stack-lato;
 	margin: .25em;
 	padding: .5em .75em;
+
+	@media #{$brk-narrow} {
+		font-size: 120%;
+	}
 }
 
 .contact p {
 	@extend %margin-auto;
 	padding: .75em 0;
+	color: $color-text-light;
+
+	@media #{$brk-narrow} {
+		@include text($color-text-light, 140%, 300);
+		width: 70%;
+	}
+
+	@media #{$brk-narrow} {
+			width: 60%;
+	}
 }
